@@ -39,6 +39,6 @@ describe "LayoutLinks" do
 		click_link "Sign up now!"
 		response.should have_selector('title', :content => "Sign up")
 		# test to insure that logo has link and vice versa...
-		response.should have_selector('a[href="/"]>img)
+		response.should have_selector('a[href="/"]>img')
 	end
 end
